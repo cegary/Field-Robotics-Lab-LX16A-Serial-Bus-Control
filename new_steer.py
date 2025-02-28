@@ -146,8 +146,7 @@ while run:
         left_y = joystick.get_axis(1)
         left_x = joystick.get_axis(0)
         
-        if abs(left_x) > 0.2:
-            theta = turn(left_x * 40)
+        theta = turn(left_x * 40)
         if abs(left_y) > 0.2:
             base_speed = int(left_y * 1000)
         else: base_speed = 0
